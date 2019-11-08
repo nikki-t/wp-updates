@@ -1,8 +1,4 @@
 # wp-updates
-First iteration, still in testing phase: Python program to update WordPress installation themes and plugins for use with LXD containers; bash script is used to loop through containers on host machine and then run python program local to the container.
+Python program to automate theme and plugin updates on WordPress installations. For use with LXD containers and includes bash script that loops through WordPress containers on host machine to run python program locally on the container. Requires wqet and requests libraries.
 
-
-
-Used with venv and requires wget and requests libraries.
-
-Composed of several modules: Check for updates, apply updates, print reports, cleanup, and custom exceptions.
+wp_updates is composed of several modules: Check for updates (update_check.py), apply updates (apply_updates.py), print reports (print_reports.py), cleanup (maintenance_cleanup.py), and custom exceptions (cusom_exceptions.py).
